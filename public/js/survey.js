@@ -1,5 +1,9 @@
 
 $( document ).ready(() => {
+
+  function rNum(start,end) {
+    return Math.floor(Math.random()*(end-start)+start)
+  }
     var config = {
         ".chosen-select": {},
         ".chosen-select-deselect": {
@@ -76,5 +80,34 @@ $( document ).ready(() => {
         } else {
           alert("Please fill out all fields before submitting!");
         }
+      });
+      $("#randomize").on("click", function (event) {
+        event.preventDefault();
+          // AJAX post the data to the friends API.
+          $.post("/api/friends", {
+            name: "Joe Sixpack",
+            photo: "../images/random.jpg",
+            scores: [
+              rNum(1,5),
+              rNum(1,5),
+              rNum(1,5),
+              rNum(1,5),
+              rNum(1,5),
+              rNum(1,5),
+              rNum(1,5),
+              rNum(1,5),
+              rNum(1,5),
+              rNum(1,5)
+            ]
+          }, function (data) {
+  
+            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+            $("#match-name").text(data.name);
+            $("#match-img").attr("src", data.photo);
+  
+            // Show the modal with the best match
+            $("#results-modal").modal("toggle");
+  
+          });
       });
 })
