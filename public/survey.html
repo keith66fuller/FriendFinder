@@ -31,7 +31,7 @@
 
     <h2>Answer These Questions</h2>
     <hr>
-    <!-- Submit Button -->
+
     <button type="submit" id="randomize">
         Just randomize me and my responses ...</button>
     <h3>
@@ -44,149 +44,11 @@
     <input type="text" id="photo" class="form-control" required>
 
     <hr>
-
-    <h3>
-      <strong>Question 1</strong>
-    </h3>
-    <h4>It's my way or the highway.</h4>
-    <select class="chosen-select" id="q1">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3>
-      <strong>Question 2</strong>
-    </h3>
-    <h4>It's important to never make any mistakes whatsoever.</h4>
-    <select class="chosen-select" id="q2">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <h3>
-      <strong>Question 3</strong>
-    </h3>
-    <h4>Questions of morality ultimately boil down to whatever benefits me the most at the time.</h4>
-    <select class="chosen-select" id="q3">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <h3>
-      <strong>Question 4</strong>
-    </h3>
-    <h4>You rarely apologize.</h4>
-    <select class="chosen-select" id="q4">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <h3>
-      <strong>Question 5</strong>
-    </h3>
-    <h4>People rarely rise to my standards of good conduct.</h4>
-    <select class="chosen-select" id="q5">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <h3>
-      <strong>Question 6</strong>
-    </h3>
-    <h4>Pepsi is better than Coke.</h4>
-    <select class="chosen-select" id="q6">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-
-    <h3>
-      <strong>Question 7</strong>
-    </h3>
-    <h4>To the victor go the spoils.</h4>
-    <select class="chosen-select" id="q7">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3>
-      <strong>Question 8</strong>
-    </h3>
-    <h4>The apple doesn't fall far from the tree.</h4>
-    <select class="chosen-select" id="q8">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3>
-      <strong>Question 9</strong>
-    </h3>
-    <h4>There is nothing more deceptive than an obvious fact. (Arthur Conan Doyle)</h4>
-    <select class="chosen-select" id="q9">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
-
-    <h3>
-      <strong>Question 10</strong>
-    </h3>
-    <h4>Energetic people frighten you.</h4>
-    <select class="chosen-select" id="q10">
-      <option value=""></option>
-      <option value="1">1 (Strongly Disagree)</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5 (Strongly Agree)</option>
-    </select>
+    <div id="questionsGoHere"></div>
 
     <br>
     <br>
-
-    <!-- Submit Button -->
-    <button type="submit" id="submit">
-      Submit</button>
-
+    <button type="submit" id="submit"> Submit</button>
     <hr>
     <footer class="footer">
       <div class="container">
@@ -213,7 +75,7 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <!-- <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt=""> -->
+          <img id="match-img" src="" alt="">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
